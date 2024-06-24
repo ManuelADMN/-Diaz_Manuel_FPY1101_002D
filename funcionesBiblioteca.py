@@ -39,7 +39,9 @@ def guardarArchivo():
             coleccion.write(f"Titulo del libro: {titulo} Autor del libro: {autor} Fecha de Publicación: {fechaPublicacion} Genero del Libro: {genero} ");
             print("\nSe ha generado correctamente... Abriendo\n");
     with open ('coleccionLibros.txt','r') as coleccion:
-        
+        coleccionLeer=coleccion.read();
+        print(coleccionLeer);
+
                     
         
 
