@@ -1,5 +1,5 @@
 ##main 
-
+import funcionesBiblioteca as func
 
 
 
@@ -14,4 +14,5 @@ print("Opcion numero 6: Salir del Programa.");
 opcion =int(input("Ingrese una opcion de las que se muestran: "));
 if opcion==1:
     print("Usted ha seleccionado la opcion 1, Agregar un libro. ");
-    (input("Ingrese el nombre del libro: "));
+    func.agregarLibros();
+
