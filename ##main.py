@@ -1,6 +1,6 @@
 ##main 
 import funcionesBiblioteca as func
-
+libreria=[];
 
 
 
