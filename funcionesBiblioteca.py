@@ -24,14 +24,13 @@ def agregarLibros(libreria):
                     genero=input("\n/Ingrese el genero del libro:  ");
                 except TypeError:
                     print("Ingrese un genero válido..");
-                else:
-                    libro={'titulo': titulo,
-                           'autor': autor,
-                           'fechaPublicacion': fechaPublicacion,
-                           'genero': genero};
-                    libreria.append(libro);
-                print(f"\nLibro {titulo} se ha agregado correctamente.\n");
-                return titulo, autor, fechaPublicacion, genero;
+        libro={'titulo': titulo,
+                'autor': autor,
+                'fechaPublicacion': fechaPublicacion,
+                'genero': genero};
+        libreria.append(libro);
+    print(f"\nLibro {titulo} se ha agregado correctamente.\n");
+    return;
 
 #Se imprimen los libros que hay en la colección.
 def ver_libros(libreria):
@@ -79,10 +78,8 @@ def guardarArchivo(libreria):
     print("\n// Ha seleccionado guardar colección\n\n");
     with open ('coleccionLibros.txt','w') as coleccion:
         for libro in libreria:
-            coleccion.write(f"Titulo del libro: {titulo} Autor del libro: {autor} Fecha de Publicación: {fechaPublicacion} Genero del Libro: {genero} ");
-            print("\nSe ha generado correctamente... Abriendo\n");
-    with open ('coleccionLibros.txt','r') as coleccion:
-        coleccionLeer=coleccion.read();
-        print(coleccionLeer);
+            colecciones=coleccion.write(f"Titulo del libro: {titulo} Autor del libro: {autor} Fecha de Publicación: {fechaPublicacion} Genero del Libro: {genero} ");
+            print("\nSe ha generado correctamente...\n");
+
 
                     
