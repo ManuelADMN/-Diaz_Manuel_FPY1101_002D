@@ -13,7 +13,7 @@ while True:
     print("Opcion numero 5: Guardar coleccion en un Archivo.");
     print("Opcion numero 6: Salir del Programa.");
     try:
-        opcion =int(input("Ingrese una opcion de las que se muestran: "));
+        opcion=int(input("Ingrese una opcion de las que se muestran: "));
     except ValueError:
         print("\nIngrese una opción válida\n")
     else:
