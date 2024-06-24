@@ -38,3 +38,5 @@ while True:
         else:
             print("Ingrese una opción válida");
 
+
+#Nombres: Guillermo Cerda, Manuel Díaz y Martín Díaz
