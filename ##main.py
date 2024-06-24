@@ -3,7 +3,7 @@ import funcionesBiblioteca as func
 libreria=[];
 
 
-
+#Opciones menu Principal
 print ("Bienvenido a la Biblioteca personal. Eliga una opcion de las que se mostraran: ");
 while True:
     print("Opcion numero 1: Agregar Libros.");
