@@ -30,8 +30,8 @@ def agregarLibros():
                            'fechaPublicacion': fechaPublicacion,
                            'genero': genero};
                     libreria.append(libro);
-                    return;
-                print(f"\nLibro {titulo} se ha agregado correctamente.");
+                print(f"\nLibro {titulo} se ha agregado correctamente.\n");
+                return titulo, autor, fechaPublicacion, genero;
 
 #Se imprimen los libros que hay en la colección.
 def ver_libros():
@@ -75,7 +75,7 @@ def eliminar_libro():
 
 ####Se incluye funcion de guardar archivo.
 
-def guardarArchivo():
+def guardarArchivo(titulo, autor, fechaPublicacion, genero):
     print("\n// Ha seleccionado guardar colección\n\n");
     with open ('coleccionLibros.txt','w') as coleccion:
         for libro in libreria:
