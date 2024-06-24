@@ -1,3 +1,4 @@
+import csv
 ##funcionesBibliotecaHola
 libreria=[];
 libro=[];
@@ -76,10 +77,9 @@ def eliminar_libro(libreria):
 
 def guardarArchivo(libreria):
     print("\n// Ha seleccionado guardar colección\n\n");
-    with open ('coleccionLibros.txt','w') as coleccion:
-        for libro in libreria:
-            colecciones=coleccion.write(f"Titulo del libro: {titulo} Autor del libro: {autor} Fecha de Publicación: {fechaPublicacion} Genero del Libro: {genero} ");
-            print("\nSe ha generado correctamente...\n");
+    with open ('coleccionLibros.csv','w', newline = '') as coleccion:
+        escritor = csv.writer(coleccion);
+        escritor.writerow(libreria);
 
 
                     
