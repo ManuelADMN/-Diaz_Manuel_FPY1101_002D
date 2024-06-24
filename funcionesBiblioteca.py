@@ -1,6 +1,6 @@
 ##funcionesBibliotecaHola
 libreria=[];
-
+libro=[];
 ##Se agrega funcion de agregar libro.
 
 def agregarLibros(libreria):
