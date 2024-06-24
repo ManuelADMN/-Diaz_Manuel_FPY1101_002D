@@ -14,7 +14,7 @@ def agregarLibros():
             print("Ingrese un nombre válido..")
         else:
             try:
-                fechaPublicacion=int(input("\n/Ingrese el titulo del libro:  "));
+                fechaPublicacion=int(input("\n/Ingrese la fecha del libro:  "));
             except ValueError:
                 print("Ingrese una fecha válida..")
             else:
