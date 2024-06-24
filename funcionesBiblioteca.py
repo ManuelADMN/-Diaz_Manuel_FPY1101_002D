@@ -31,6 +31,45 @@ def agregarLibros():
                     return;
                 print(f"\nLibro {titulo} se ha agregado correctamente.");
 
+#Se imprimen los libros que hay en la colección.
+def ver_libros():
+    for i in libreria:
+        print(i);
+
+#Se modifica un libro en la colección, reemplazando su nombre.
+def modificar_libro():
+    try:
+        libro = input("Ingrese el nombre del libro que quiere modificar: ");
+    except TypeError:
+        print("Libro inválido. Intente nuevamente.");
+    else:
+        try:
+            libroModificar = input("Ingrese el nuevo nombre del libro: ");
+        except TypeError:
+            print("Libro inválido. Intente nuevamente.");
+        else:
+            for i in libreria:
+                if (i == libro):
+                    libreria.remove(libro);
+                    libreria.append(libroModificar);
+                    print("Modificado exitosamente.");
+                else:
+                    print("Libro no encontrado.");
+
+#Se elimina un libro de la colección
+def eliminar_libro():
+    try:
+        libro = input("Ingrese el nombre del libro que quiere eliminar: ");
+    except TypeError:
+        print("Libro inválido. Intente nuevamente.");
+    else:
+        for i in libreria:
+            if (i == libro):
+                libreria.remove(libro);
+                print(f"Libro {libro} eliminado");
+            else:
+                print("Libro no encontrado.");
+
 
 def guardarArchivo():
     print("\n// Ha seleccionado guardar colección\n\n");
