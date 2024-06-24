@@ -3,7 +3,7 @@ libreria=[];
 
 ##Se agrega funcion de agregar libro.
 
-def agregarLibros():
+def agregarLibros(libreria):
     print("\n// Ha seleccionado agregar libro\n");
     try:
         titulo=input("\n/Ingrese el titulo del libro:  ");
@@ -34,14 +34,14 @@ def agregarLibros():
                 return titulo, autor, fechaPublicacion, genero;
 
 #Se imprimen los libros que hay en la colección.
-def ver_libros():
+def ver_libros(libreria):
     for i in libreria:
         print(i);
 
 #Se modifica un libro en la colección, reemplazando su nombre.
-def modificar_libro():
+def modificar_libro(libreria):
     try:
-        libro = input("Ingrese el nombre del libro que quiere modificar: ");
+        titulo = input("Ingrese el nombre del libro que quiere modificar: ");
     except TypeError:
         print("Libro inválido. Intente nuevamente.");
     else:
@@ -59,7 +59,7 @@ def modificar_libro():
                     print("Libro no encontrado.");
 
 #Se elimina un libro de la colección
-def eliminar_libro():
+def eliminar_libro(libreria):
     try:
         libro = input("Ingrese el nombre del libro que quiere eliminar: ");
     except TypeError:
@@ -75,7 +75,7 @@ def eliminar_libro():
 
 ####Se incluye funcion de guardar archivo.
 
-def guardarArchivo(titulo, autor, fechaPublicacion, genero):
+def guardarArchivo(libreria):
     print("\n// Ha seleccionado guardar colección\n\n");
     with open ('coleccionLibros.txt','w') as coleccion:
         for libro in libreria:

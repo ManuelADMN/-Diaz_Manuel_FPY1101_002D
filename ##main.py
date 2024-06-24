@@ -19,19 +19,19 @@ while True:
     else:
         if opcion==1:
             print("Usted ha seleccionado la opcion 1, Agregar un libro. ");
-            func.agregarLibros();
+            func.agregarLibros(libreria);
         elif opcion==2:
             print("Usted ha seleccionado la opcion 2, ver libros. ");
-            func.ver_libros();
+            func.ver_libros(libreria);
         elif opcion==3:
             print("Usted ha seleccionado la opcion 3, Modificar un libro. ");
-            func.modificar_libro();
+            func.modificar_libro(libreria);
         elif opcion==4:
             print("Usted ha seleccionado la opcion 4, Eliminar un libro. ");
-            func.eliminar_libro();
+            func.eliminar_libro(libreria);
         elif opcion==5:
             print("Usted ha seleccionado la opcion 5, Guardar Coleccion. ");
-            func.guardarArchivo();
+            func.guardarArchivo(libreria);
         elif opcion==6:
             print("Usted ha seleccionado la opcion 6, Saliendo. ");
             break;
