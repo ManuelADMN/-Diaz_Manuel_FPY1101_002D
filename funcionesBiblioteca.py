@@ -1,6 +1,8 @@
 ##funcionesBibliotecaHola
 libreria=[];
 
+##Se agrega funcion de agregar libro.
+
 def agregarLibros():
     print("\n// Ha seleccionado agregar libro\n");
     try:
@@ -70,6 +72,8 @@ def eliminar_libro():
             else:
                 print("Libro no encontrado.");
 
+
+####Se incluye funcion de guardar archivo.
 
 def guardarArchivo():
     print("\n// Ha seleccionado guardar colección\n\n");
