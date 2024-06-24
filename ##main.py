@@ -5,7 +5,7 @@ import funcionesBiblioteca as func
 
 
 print ("Bienvenido a la Biblioteca personal. Eliga una opcion de las que se mostraran: ");
-while True
+while True:
     print("Opcion numero 1: Agregar Libros.");
     print("Opcion numero 2: Ver todos los Libros.");
     print("Opcion numero 3: Modificar un Libro.");
