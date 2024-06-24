@@ -86,5 +86,3 @@ def guardarArchivo():
         print(coleccionLeer);
 
                     
-agregarLibros();
-ver_libros();
